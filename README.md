@@ -10,7 +10,7 @@ Features
 
 Examples
 --------
-
+```ruby
 require 'nagios_helper'
 
 # Initialize nagios plugin helper
@@ -21,7 +21,7 @@ check.parse_argv()
 
 # Execute runner method - this had to be overwritten from NagiosHelper::Plugins.run
 check.run
-
+```
 Requirements
 ------------
 
