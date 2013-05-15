@@ -1,7 +1,7 @@
 nagios_helper
 ===========
 
-Provies a simple helper lib to easily write nagios conform checks in Ruby
+Provides a simple helper lib to easily write nagios conform checks in Ruby
 
 Features
 --------
