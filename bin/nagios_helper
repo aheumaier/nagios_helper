@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+root = File.expand_path('../..', __FILE__)
+require File.join(root, %w[lib nagios_helper])
+
+# Initialize nagios plugin helper
+check = NagiosHelper::PluginIpercast.new()
+
+# Load check arguments (optional)
+check.parse_argv()
+
+# Execute runner method - this had to be overwritten from NagiosHelper::Plugins.run
+check.run
