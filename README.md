@@ -11,12 +11,21 @@ Features
 Examples
 --------
 
-    FIXME (code sample of usage)
+require 'nagios_helper'
+
+# Initialize nagios plugin helper
+check = NagiosHelper::Plugin.new()
+
+# Load check commandline arguments (optional)
+check.parse_argv()
+
+# Execute runner method - this had to be overwritten from NagiosHelper::Plugins.run
+check.run
 
 Requirements
 ------------
 
-* FIXME (list of requirements)
+compliant to ruby/core 1.9.3
 
 Install
 -------
@@ -28,17 +37,12 @@ Author
 
 Original author: A. Heumaier
 
-Contributors:
-
-* FIXME (contributor 1?)
-* FIXME (contributor 2?)
-
 License
 -------
 
-(The MIT License) FIXME (different license?)
+(The MIT License)
 
-Copyright (c) 2013 FIXME (author's name)
+Copyright (c) 2013 A. Heumaier
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
